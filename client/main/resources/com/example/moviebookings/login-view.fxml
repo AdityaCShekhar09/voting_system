@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moviebookings.LoginController">
+   <children>
+      <AnchorPane layoutX="-6.0" layoutY="-8.0" prefHeight="411.0" prefWidth="220.0" style="-fx-background-color: tomato;">
+         <children>
+            <Label layoutX="69.0" layoutY="84.0" text="Login" textFill="#f7f6f6">
+               <font>
+                  <Font name="Cambria" size="34.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="163.0" layoutX="35.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/profile.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="255.0" layoutY="134.0" text="Email:">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="255.0" layoutY="187.0" text="Password:">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="email" layoutX="375.0" layoutY="132.0" />
+      <Button fx:id="loginbtn" layoutX="241.0" layoutY="255.0" mnemonicParsing="false" onAction="#onlogin" prefHeight="43.0" prefWidth="337.0" style="-fx-background-color: tomato;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="signupbtn" layoutX="241.0" layoutY="319.0" mnemonicParsing="false" onAction="#onsignup" prefHeight="43.0" prefWidth="337.0" style="-fx-background-color: tomato;" text="Signup" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="message" alignment="CENTER" contentDisplay="CENTER" layoutX="243.0" layoutY="57.0" prefHeight="23.0" prefWidth="337.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pass" layoutX="375.0" layoutY="185.0" />
+   </children>
+</Pane>
